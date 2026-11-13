@@ -60,16 +60,16 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 401 ms (beats 91.73%)  
-**Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-11-13T20:38:48.131Z  
+**Runtime:** 80 ms  
+**Memory:** 0B  
+**Submitted:** 2026-11-13T20:39:22.093Z  
 
 ```sql
 # Write your MySQL query statement below
 SELECT distinct author_id as id
 from Views
 WHERE author_id=viewer_id
-order by author_id;
+order by id;
 ```
 
 ---
