@@ -1,4 +1,4 @@
-# Weather Observation Station 4
+# Weather Observation Station 5
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -24,14 +24,15 @@ where **LAT\_N** is the northern latitude and **LONG\_W** is the western longitu
 
 ## Solution
 
-**Language:** db2  
+**Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-08T14:57:36.653Z  
+**Submitted:** 2026-11-15T15:47:26.505Z  
 
-```db2
-SELECT COUNT(CITY)- COUNT(DISTINCT CITY)
-FROM STATION;
+```sql
+(SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) ASC, CITY ASC LIMIT 1)
+UNION ALL
+(SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) DESC, CITY ASC LIMIT 1);
 
 ```
 
