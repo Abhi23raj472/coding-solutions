@@ -60,9 +60,9 @@ So the result is customer_number 3.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 495 ms (beats 67.22%)  
+**Runtime:** 406 ms (beats 97.99%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-11-16T16:36:07.407Z  
+**Submitted:** 2026-11-16T16:37:00.986Z  
 
 ```sql
 # Write your MySQL query statement below
@@ -70,6 +70,8 @@ SELECT customer_number
 FROM Orders
 GROUP by customer_number
 ORDER BY COUNT(*) DESC LIMIT 1;
+
+
 ```
 
 ---
