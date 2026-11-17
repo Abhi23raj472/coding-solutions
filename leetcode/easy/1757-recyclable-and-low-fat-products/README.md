@@ -57,16 +57,14 @@ Explanation: Only products 1 and 3 are both low fat and recyclable.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 540 ms (beats 78.43%)  
+**Runtime:** 575 ms (beats 62.69%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-11-13T20:23:16.856Z  
+**Submitted:** 2026-11-17T18:45:26.426Z  
 
 ```sql
-# Write your MySQL query statement below
 SELECT product_id
-from Products
-WHERE low_fats='Y' AND recyclable='Y'
-
+FROM Products
+WHERE low_fats='Y' AND recyclable='Y';
 ```
 
 ---
